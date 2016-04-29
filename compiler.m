@@ -1,7 +1,7 @@
 (* ::Package:: *)
 
 SetDirectory[NotebookDirectory[]];
-$FeynRulesPath=ToFileName[{$LibDirectory, "FeynRules"}];
+$FeynRulesPath=ToFileName[{NotebookDirectory[], "FeynRules"}];
 AppendTo[$Path,$FeynRulesPath];
 <<FeynRules`;
 
@@ -13,7 +13,7 @@ WriteUFO[LGauge,LHiggs,LFermions,LYukawa,LGhost];
 
 
 SetDirectory[NotebookDirectory[]];
-$FeynRulesPath=ToFileName[{$LibDirectory, "FeynRules"}];
+$FeynRulesPath=ToFileName[{NotebookDirectory[], "FeynRules"}];
 AppendTo[$Path,$FeynRulesPath];
 <<FeynRules`;
 
@@ -25,7 +25,7 @@ WriteFeynArtsOutput[LGauge,LHiggs,LFermions,LYukawa,LGhost,FlavorExpand->SU2W]
 
 
 SetDirectory[NotebookDirectory[]];
-$FeynRulesPath=ToFileName[{$LibDirectory, "FeynRules"}];
+$FeynRulesPath=ToFileName[{NotebookDirectory[], "FeynRules"}];
 AppendTo[$Path,$FeynRulesPath];
 <<FeynRules`;
 
@@ -38,7 +38,10 @@ WriteFeynArtsOutput[LGauge,LHiggs,LFermions,LYukawa,FlavorExpand->SU2W,Output->"
 
 CheckHermiticity[LSM,FlavorExpand->True]
 CheckMassSpectrum[LSM]
+
+(* Note that CheckKineticTermNormalisation alerts neutrino normalization. *)
 CheckKineticTermNormalisation[LSM,FlavorExpand->True]
+
 CheckDiagonalKineticTerms[LSM]
 CheckDiagonalMassTerms[LSM]
 CheckDiagonalQuadraticTerms[LSM]

@@ -1,0 +1,3 @@
+[submodule "FeynRules"]
+	path = FeynRules
+	url = git://github.com/HEPcodes/FeynRules.git

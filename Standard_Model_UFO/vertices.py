@@ -1,6 +1,6 @@
-# This file was automatically created by FeynRules 2.3.2
-# Mathematica version: 10.0 for Mac OS X x86 (64-bit) (December 4, 2014)
-# Date: Wed 2 Sep 2015 21:51:04
+# This file was automatically created by FeynRules 2.3.21
+# Mathematica version: 10.3.0 for Mac OS X x86 (64-bit) (October 9, 2015)
+# Date: Fri 29 Apr 2016 11:48:11
 
 
 from object_library import all_vertices, Vertex
@@ -286,310 +286,310 @@ V_46 = Vertex(name = 'V_46',
               couplings = {(0,0):C.GC_99})
 
 V_47 = Vertex(name = 'V_47',
-              particles = [ P.e__plus__, P.ve, P.W__minus__ ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_58})
-
-V_48 = Vertex(name = 'V_48',
-              particles = [ P.mu__plus__, P.vm, P.W__minus__ ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_58})
-
-V_49 = Vertex(name = 'V_49',
-              particles = [ P.ta__plus__, P.vt, P.W__minus__ ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_58})
-
-V_50 = Vertex(name = 'V_50',
-              particles = [ P.ve__tilde__, P.ve, P.Z ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_80})
-
-V_51 = Vertex(name = 'V_51',
-              particles = [ P.vm__tilde__, P.vm, P.Z ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_80})
-
-V_52 = Vertex(name = 'V_52',
-              particles = [ P.vt__tilde__, P.vt, P.Z ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_80})
-
-V_53 = Vertex(name = 'V_53',
-              particles = [ P.ve__tilde__, P.e__minus__, P.W__plus__ ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_58})
-
-V_54 = Vertex(name = 'V_54',
-              particles = [ P.vm__tilde__, P.mu__minus__, P.W__plus__ ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_58})
-
-V_55 = Vertex(name = 'V_55',
-              particles = [ P.vt__tilde__, P.ta__minus__, P.W__plus__ ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_58})
-
-V_56 = Vertex(name = 'V_56',
               particles = [ P.e__plus__, P.e__minus__, P.a ],
               color = [ '1' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_3})
 
-V_57 = Vertex(name = 'V_57',
+V_48 = Vertex(name = 'V_48',
               particles = [ P.mu__plus__, P.mu__minus__, P.a ],
               color = [ '1' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_3})
 
-V_58 = Vertex(name = 'V_58',
+V_49 = Vertex(name = 'V_49',
               particles = [ P.ta__plus__, P.ta__minus__, P.a ],
               color = [ '1' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_3})
 
-V_59 = Vertex(name = 'V_59',
-              particles = [ P.e__plus__, P.e__minus__, P.Z ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2, L.FFV4 ],
-              couplings = {(0,0):C.GC_68,(0,1):C.GC_77})
-
-V_60 = Vertex(name = 'V_60',
-              particles = [ P.mu__plus__, P.mu__minus__, P.Z ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2, L.FFV4 ],
-              couplings = {(0,0):C.GC_68,(0,1):C.GC_77})
-
-V_61 = Vertex(name = 'V_61',
-              particles = [ P.ta__plus__, P.ta__minus__, P.Z ],
-              color = [ '1' ],
-              lorentz = [ L.FFV2, L.FFV4 ],
-              couplings = {(0,0):C.GC_68,(0,1):C.GC_77})
-
-V_62 = Vertex(name = 'V_62',
-              particles = [ P.u__tilde__, P.u, P.g ],
-              color = [ 'T(3,2,1)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_11})
-
-V_63 = Vertex(name = 'V_63',
-              particles = [ P.c__tilde__, P.c, P.g ],
-              color = [ 'T(3,2,1)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_11})
-
-V_64 = Vertex(name = 'V_64',
-              particles = [ P.t__tilde__, P.t, P.g ],
-              color = [ 'T(3,2,1)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_11})
-
-V_65 = Vertex(name = 'V_65',
-              particles = [ P.d__tilde__, P.u, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_59})
-
-V_66 = Vertex(name = 'V_66',
-              particles = [ P.s__tilde__, P.u, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_60})
-
-V_67 = Vertex(name = 'V_67',
-              particles = [ P.b__tilde__, P.u, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_61})
-
-V_68 = Vertex(name = 'V_68',
-              particles = [ P.d__tilde__, P.c, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_62})
-
-V_69 = Vertex(name = 'V_69',
-              particles = [ P.s__tilde__, P.c, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_63})
-
-V_70 = Vertex(name = 'V_70',
-              particles = [ P.b__tilde__, P.c, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_64})
-
-V_71 = Vertex(name = 'V_71',
-              particles = [ P.d__tilde__, P.t, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_65})
-
-V_72 = Vertex(name = 'V_72',
-              particles = [ P.s__tilde__, P.t, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_66})
-
-V_73 = Vertex(name = 'V_73',
-              particles = [ P.b__tilde__, P.t, P.W__minus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_67})
-
-V_74 = Vertex(name = 'V_74',
+V_50 = Vertex(name = 'V_50',
               particles = [ P.u__tilde__, P.u, P.a ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_2})
 
-V_75 = Vertex(name = 'V_75',
+V_51 = Vertex(name = 'V_51',
               particles = [ P.c__tilde__, P.c, P.a ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_2})
 
-V_76 = Vertex(name = 'V_76',
+V_52 = Vertex(name = 'V_52',
               particles = [ P.t__tilde__, P.t, P.a ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_2})
 
-V_77 = Vertex(name = 'V_77',
-              particles = [ P.u__tilde__, P.u, P.Z ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2, L.FFV5 ],
-              couplings = {(0,0):C.GC_69,(0,1):C.GC_76})
-
-V_78 = Vertex(name = 'V_78',
-              particles = [ P.c__tilde__, P.c, P.Z ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2, L.FFV5 ],
-              couplings = {(0,0):C.GC_69,(0,1):C.GC_76})
-
-V_79 = Vertex(name = 'V_79',
-              particles = [ P.t__tilde__, P.t, P.Z ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2, L.FFV5 ],
-              couplings = {(0,0):C.GC_69,(0,1):C.GC_76})
-
-V_80 = Vertex(name = 'V_80',
-              particles = [ P.d__tilde__, P.d, P.g ],
-              color = [ 'T(3,2,1)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_11})
-
-V_81 = Vertex(name = 'V_81',
-              particles = [ P.s__tilde__, P.s, P.g ],
-              color = [ 'T(3,2,1)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_11})
-
-V_82 = Vertex(name = 'V_82',
-              particles = [ P.b__tilde__, P.b, P.g ],
-              color = [ 'T(3,2,1)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_11})
-
-V_83 = Vertex(name = 'V_83',
-              particles = [ P.u__tilde__, P.d, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_124})
-
-V_84 = Vertex(name = 'V_84',
-              particles = [ P.c__tilde__, P.d, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_127})
-
-V_85 = Vertex(name = 'V_85',
-              particles = [ P.t__tilde__, P.d, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_130})
-
-V_86 = Vertex(name = 'V_86',
-              particles = [ P.u__tilde__, P.s, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_125})
-
-V_87 = Vertex(name = 'V_87',
-              particles = [ P.c__tilde__, P.s, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_128})
-
-V_88 = Vertex(name = 'V_88',
-              particles = [ P.t__tilde__, P.s, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_131})
-
-V_89 = Vertex(name = 'V_89',
-              particles = [ P.u__tilde__, P.b, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_126})
-
-V_90 = Vertex(name = 'V_90',
-              particles = [ P.c__tilde__, P.b, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_129})
-
-V_91 = Vertex(name = 'V_91',
-              particles = [ P.t__tilde__, P.b, P.W__plus__ ],
-              color = [ 'Identity(1,2)' ],
-              lorentz = [ L.FFV2 ],
-              couplings = {(0,0):C.GC_132})
-
-V_92 = Vertex(name = 'V_92',
+V_53 = Vertex(name = 'V_53',
               particles = [ P.d__tilde__, P.d, P.a ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_1})
 
-V_93 = Vertex(name = 'V_93',
+V_54 = Vertex(name = 'V_54',
               particles = [ P.s__tilde__, P.s, P.a ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_1})
 
-V_94 = Vertex(name = 'V_94',
+V_55 = Vertex(name = 'V_55',
               particles = [ P.b__tilde__, P.b, P.a ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV1 ],
               couplings = {(0,0):C.GC_1})
 
-V_95 = Vertex(name = 'V_95',
+V_56 = Vertex(name = 'V_56',
+              particles = [ P.u__tilde__, P.u, P.g ],
+              color = [ 'T(3,2,1)' ],
+              lorentz = [ L.FFV1 ],
+              couplings = {(0,0):C.GC_11})
+
+V_57 = Vertex(name = 'V_57',
+              particles = [ P.c__tilde__, P.c, P.g ],
+              color = [ 'T(3,2,1)' ],
+              lorentz = [ L.FFV1 ],
+              couplings = {(0,0):C.GC_11})
+
+V_58 = Vertex(name = 'V_58',
+              particles = [ P.t__tilde__, P.t, P.g ],
+              color = [ 'T(3,2,1)' ],
+              lorentz = [ L.FFV1 ],
+              couplings = {(0,0):C.GC_11})
+
+V_59 = Vertex(name = 'V_59',
+              particles = [ P.d__tilde__, P.d, P.g ],
+              color = [ 'T(3,2,1)' ],
+              lorentz = [ L.FFV1 ],
+              couplings = {(0,0):C.GC_11})
+
+V_60 = Vertex(name = 'V_60',
+              particles = [ P.s__tilde__, P.s, P.g ],
+              color = [ 'T(3,2,1)' ],
+              lorentz = [ L.FFV1 ],
+              couplings = {(0,0):C.GC_11})
+
+V_61 = Vertex(name = 'V_61',
+              particles = [ P.b__tilde__, P.b, P.g ],
+              color = [ 'T(3,2,1)' ],
+              lorentz = [ L.FFV1 ],
+              couplings = {(0,0):C.GC_11})
+
+V_62 = Vertex(name = 'V_62',
+              particles = [ P.d__tilde__, P.u, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_59})
+
+V_63 = Vertex(name = 'V_63',
+              particles = [ P.s__tilde__, P.u, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_60})
+
+V_64 = Vertex(name = 'V_64',
+              particles = [ P.b__tilde__, P.u, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_61})
+
+V_65 = Vertex(name = 'V_65',
+              particles = [ P.d__tilde__, P.c, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_62})
+
+V_66 = Vertex(name = 'V_66',
+              particles = [ P.s__tilde__, P.c, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_63})
+
+V_67 = Vertex(name = 'V_67',
+              particles = [ P.b__tilde__, P.c, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_64})
+
+V_68 = Vertex(name = 'V_68',
+              particles = [ P.d__tilde__, P.t, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_65})
+
+V_69 = Vertex(name = 'V_69',
+              particles = [ P.s__tilde__, P.t, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_66})
+
+V_70 = Vertex(name = 'V_70',
+              particles = [ P.b__tilde__, P.t, P.W__minus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_67})
+
+V_71 = Vertex(name = 'V_71',
+              particles = [ P.u__tilde__, P.d, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_124})
+
+V_72 = Vertex(name = 'V_72',
+              particles = [ P.c__tilde__, P.d, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_127})
+
+V_73 = Vertex(name = 'V_73',
+              particles = [ P.t__tilde__, P.d, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_130})
+
+V_74 = Vertex(name = 'V_74',
+              particles = [ P.u__tilde__, P.s, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_125})
+
+V_75 = Vertex(name = 'V_75',
+              particles = [ P.c__tilde__, P.s, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_128})
+
+V_76 = Vertex(name = 'V_76',
+              particles = [ P.t__tilde__, P.s, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_131})
+
+V_77 = Vertex(name = 'V_77',
+              particles = [ P.u__tilde__, P.b, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_126})
+
+V_78 = Vertex(name = 'V_78',
+              particles = [ P.c__tilde__, P.b, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_129})
+
+V_79 = Vertex(name = 'V_79',
+              particles = [ P.t__tilde__, P.b, P.W__plus__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_132})
+
+V_80 = Vertex(name = 'V_80',
+              particles = [ P.e__plus__, P.ve, P.W__minus__ ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_58})
+
+V_81 = Vertex(name = 'V_81',
+              particles = [ P.mu__plus__, P.vm, P.W__minus__ ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_58})
+
+V_82 = Vertex(name = 'V_82',
+              particles = [ P.ta__plus__, P.vt, P.W__minus__ ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_58})
+
+V_83 = Vertex(name = 'V_83',
+              particles = [ P.ve__tilde__, P.e__minus__, P.W__plus__ ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_58})
+
+V_84 = Vertex(name = 'V_84',
+              particles = [ P.vm__tilde__, P.mu__minus__, P.W__plus__ ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_58})
+
+V_85 = Vertex(name = 'V_85',
+              particles = [ P.vt__tilde__, P.ta__minus__, P.W__plus__ ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_58})
+
+V_86 = Vertex(name = 'V_86',
+              particles = [ P.u__tilde__, P.u, P.Z ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2, L.FFV5 ],
+              couplings = {(0,0):C.GC_69,(0,1):C.GC_76})
+
+V_87 = Vertex(name = 'V_87',
+              particles = [ P.c__tilde__, P.c, P.Z ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2, L.FFV5 ],
+              couplings = {(0,0):C.GC_69,(0,1):C.GC_76})
+
+V_88 = Vertex(name = 'V_88',
+              particles = [ P.t__tilde__, P.t, P.Z ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.FFV2, L.FFV5 ],
+              couplings = {(0,0):C.GC_69,(0,1):C.GC_76})
+
+V_89 = Vertex(name = 'V_89',
               particles = [ P.d__tilde__, P.d, P.Z ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV2, L.FFV3 ],
               couplings = {(0,0):C.GC_68,(0,1):C.GC_76})
 
-V_96 = Vertex(name = 'V_96',
+V_90 = Vertex(name = 'V_90',
               particles = [ P.s__tilde__, P.s, P.Z ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV2, L.FFV3 ],
               couplings = {(0,0):C.GC_68,(0,1):C.GC_76})
 
-V_97 = Vertex(name = 'V_97',
+V_91 = Vertex(name = 'V_91',
               particles = [ P.b__tilde__, P.b, P.Z ],
               color = [ 'Identity(1,2)' ],
               lorentz = [ L.FFV2, L.FFV3 ],
               couplings = {(0,0):C.GC_68,(0,1):C.GC_76})
+
+V_92 = Vertex(name = 'V_92',
+              particles = [ P.ve__tilde__, P.ve, P.Z ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_80})
+
+V_93 = Vertex(name = 'V_93',
+              particles = [ P.vm__tilde__, P.vm, P.Z ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_80})
+
+V_94 = Vertex(name = 'V_94',
+              particles = [ P.vt__tilde__, P.vt, P.Z ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2 ],
+              couplings = {(0,0):C.GC_80})
+
+V_95 = Vertex(name = 'V_95',
+              particles = [ P.e__plus__, P.e__minus__, P.Z ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2, L.FFV4 ],
+              couplings = {(0,0):C.GC_68,(0,1):C.GC_77})
+
+V_96 = Vertex(name = 'V_96',
+              particles = [ P.mu__plus__, P.mu__minus__, P.Z ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2, L.FFV4 ],
+              couplings = {(0,0):C.GC_68,(0,1):C.GC_77})
+
+V_97 = Vertex(name = 'V_97',
+              particles = [ P.ta__plus__, P.ta__minus__, P.Z ],
+              color = [ '1' ],
+              lorentz = [ L.FFV2, L.FFV4 ],
+              couplings = {(0,0):C.GC_68,(0,1):C.GC_77})
 
 V_98 = Vertex(name = 'V_98',
               particles = [ P.u__tilde__, P.d, P.G__plus__ ],
@@ -736,94 +736,94 @@ V_121 = Vertex(name = 'V_121',
                couplings = {(0,0):C.GC_121})
 
 V_122 = Vertex(name = 'V_122',
-               particles = [ P.u__tilde__, P.u, P.G0 ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFS2 ],
-               couplings = {(0,0):C.GC_123})
-
-V_123 = Vertex(name = 'V_123',
-               particles = [ P.c__tilde__, P.c, P.G0 ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFS2 ],
-               couplings = {(0,0):C.GC_103})
-
-V_124 = Vertex(name = 'V_124',
-               particles = [ P.t__tilde__, P.t, P.G0 ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFS2 ],
-               couplings = {(0,0):C.GC_117})
-
-V_125 = Vertex(name = 'V_125',
-               particles = [ P.u__tilde__, P.u, P.H ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFS4 ],
-               couplings = {(0,0):C.GC_122})
-
-V_126 = Vertex(name = 'V_126',
-               particles = [ P.c__tilde__, P.c, P.H ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFS4 ],
-               couplings = {(0,0):C.GC_102})
-
-V_127 = Vertex(name = 'V_127',
-               particles = [ P.t__tilde__, P.t, P.H ],
-               color = [ 'Identity(1,2)' ],
-               lorentz = [ L.FFS4 ],
-               couplings = {(0,0):C.GC_116})
-
-V_128 = Vertex(name = 'V_128',
                particles = [ P.d__tilde__, P.u, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_31,(0,1):C.GC_40})
 
-V_129 = Vertex(name = 'V_129',
+V_123 = Vertex(name = 'V_123',
                particles = [ P.s__tilde__, P.u, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_32,(0,1):C.GC_41})
 
-V_130 = Vertex(name = 'V_130',
+V_124 = Vertex(name = 'V_124',
                particles = [ P.b__tilde__, P.u, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_33,(0,1):C.GC_42})
 
-V_131 = Vertex(name = 'V_131',
+V_125 = Vertex(name = 'V_125',
                particles = [ P.d__tilde__, P.c, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_34,(0,1):C.GC_43})
 
-V_132 = Vertex(name = 'V_132',
+V_126 = Vertex(name = 'V_126',
                particles = [ P.s__tilde__, P.c, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_35,(0,1):C.GC_44})
 
-V_133 = Vertex(name = 'V_133',
+V_127 = Vertex(name = 'V_127',
                particles = [ P.b__tilde__, P.c, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_36,(0,1):C.GC_45})
 
-V_134 = Vertex(name = 'V_134',
+V_128 = Vertex(name = 'V_128',
                particles = [ P.d__tilde__, P.t, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_37,(0,1):C.GC_46})
 
-V_135 = Vertex(name = 'V_135',
+V_129 = Vertex(name = 'V_129',
                particles = [ P.s__tilde__, P.t, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_38,(0,1):C.GC_47})
 
-V_136 = Vertex(name = 'V_136',
+V_130 = Vertex(name = 'V_130',
                particles = [ P.b__tilde__, P.t, P.G__minus__ ],
                color = [ 'Identity(1,2)' ],
                lorentz = [ L.FFS1, L.FFS3 ],
                couplings = {(0,0):C.GC_39,(0,1):C.GC_48})
+
+V_131 = Vertex(name = 'V_131',
+               particles = [ P.u__tilde__, P.u, P.G0 ],
+               color = [ 'Identity(1,2)' ],
+               lorentz = [ L.FFS2 ],
+               couplings = {(0,0):C.GC_123})
+
+V_132 = Vertex(name = 'V_132',
+               particles = [ P.c__tilde__, P.c, P.G0 ],
+               color = [ 'Identity(1,2)' ],
+               lorentz = [ L.FFS2 ],
+               couplings = {(0,0):C.GC_103})
+
+V_133 = Vertex(name = 'V_133',
+               particles = [ P.t__tilde__, P.t, P.G0 ],
+               color = [ 'Identity(1,2)' ],
+               lorentz = [ L.FFS2 ],
+               couplings = {(0,0):C.GC_117})
+
+V_134 = Vertex(name = 'V_134',
+               particles = [ P.u__tilde__, P.u, P.H ],
+               color = [ 'Identity(1,2)' ],
+               lorentz = [ L.FFS4 ],
+               couplings = {(0,0):C.GC_122})
+
+V_135 = Vertex(name = 'V_135',
+               particles = [ P.c__tilde__, P.c, P.H ],
+               color = [ 'Identity(1,2)' ],
+               lorentz = [ L.FFS4 ],
+               couplings = {(0,0):C.GC_102})
+
+V_136 = Vertex(name = 'V_136',
+               particles = [ P.t__tilde__, P.t, P.H ],
+               color = [ 'Identity(1,2)' ],
+               lorentz = [ L.FFS4 ],
+               couplings = {(0,0):C.GC_116})
 
 V_137 = Vertex(name = 'V_137',
                particles = [ P.e__plus__, P.ve, P.G__minus__ ],
