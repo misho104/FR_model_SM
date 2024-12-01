@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.0 for Mac OS X ARM (64-bit) (June 3, 2023)
-# Date: Sun 1 Dec 2024 17:16:11
+# Date: Sun 1 Dec 2024 17:16:20
 
 
 from object_library import all_couplings, Coupling

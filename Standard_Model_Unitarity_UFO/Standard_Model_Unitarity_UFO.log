@@ -1,10 +1,10 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.3.0 for Mac OS X ARM (64-bit) (June 3, 2023)
-# Date: Sun 1 Dec 2024 17:16:07
+# Date: Sun 1 Dec 2024 17:16:17
 
 
 # 
-# This is the logfile for the model Standard Model
+# This is the logfile for the model Standard Model Unitarity
 
 # Authors: N. Christensen, C. Duhr, B. Fuks
 # Model version: 1.4.6
@@ -39,8 +39,8 @@
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 93
-   * Number of flavored vertices: 163
+   * Number of classes vertices: 31
+   * Number of flavored vertices: 75
    * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
@@ -53,19 +53,19 @@
 # Vertex definitions
 #
 
-   * 163 vertices written.
+   * 75 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
 #
 
-   * 22 lorentz structures written.
+   * 17 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   * 132 couplings written.
+   * 51 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions
