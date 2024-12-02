@@ -75,7 +75,7 @@ M$GaugeGroups = {
     GaugeBoson        -> Wi, 
     StructureConstant -> Eps, 
     Representations   -> {Ta,SU2D}, 
-    Definitions       -> {Ta[a_,b_,c_]->PauliSigma[a,b,c]/2, FSU2L[i_,j_,k_]:> I Eps[i,j,k]}
+    Definitions       -> {Ta[a_,b_,c_]:>PauliSigma[a,b,c]/2, FSU2L[i_,j_,k_]:> I Eps[i,j,k]}
   },
   SU3C == { 
     Abelian           -> False, 
@@ -238,7 +238,7 @@ M$ClassesDescription = {
     ClassName     -> B, 
     Unphysical    -> True, 
     SelfConjugate -> True, 
-    Definitions   -> { B[mu_] -> -sw Z[mu]+cw A[mu]} 
+    Definitions   -> { B[mu_] :> -sw Z[mu]+cw A[mu]}
   },
   V[12] == { 
     ClassName     -> Wi,
@@ -246,7 +246,7 @@ M$ClassesDescription = {
     SelfConjugate -> True, 
     Indices       -> {Index[SU2W]},
     FlavorIndex   -> SU2W,
-    Definitions   -> { Wi[mu_,1] -> (Wbar[mu]+W[mu])/Sqrt[2], Wi[mu_,2] -> (Wbar[mu]-W[mu])/(I*Sqrt[2]), Wi[mu_,3] -> cw Z[mu] + sw A[mu]}
+    Definitions   -> { Wi[mu_,1] :> (Wbar[mu]+W[mu])/Sqrt[2], Wi[mu_,2] :> (Wbar[mu]-W[mu])/(I*Sqrt[2]), Wi[mu_,3] :> cw Z[mu] + sw A[mu]}
   },
 
 (* Ghosts: related to unphysical gauge bosons *)
@@ -691,32 +691,32 @@ M$Parameters = {
 (* *****   Lagrangian   ***** *)
 (* ************************** *)
 
-LGauge := Block[{mu,nu,ii,aa}, 
+LGauge := Module[{mu,nu,ii,aa}, 
   ExpandIndices[-1/4 FS[B,mu,nu] FS[B,mu,nu] - 1/4 FS[Wi,mu,nu,ii] FS[Wi,mu,nu,ii] - 1/4 FS[G,mu,nu,aa] FS[G,mu,nu,aa], FlavorExpand->SU2W]];
 
-LFermions := Block[{mu}, 
+LFermions := Module[{mu}, 
   ExpandIndices[I*(
     QLbar.Ga[mu].DC[QL, mu] + LLbar.Ga[mu].DC[LL, mu] + uRbar.Ga[mu].DC[uR, mu] + dRbar.Ga[mu].DC[dR, mu] + lRbar.Ga[mu].DC[lR, mu]), 
-  FlavorExpand->{SU2W,SU2D}]/.{CKM[a_,b_] Conjugate[CKM[a_,c_]]->IndexDelta[b,c], CKM[b_,a_] Conjugate[CKM[c_,a_]]->IndexDelta[b,c]}];
+  FlavorExpand->{SU2W,SU2D}]/.{CKM[a_,b_] Conjugate[CKM[a_,c_]]:>IndexDelta[b,c], CKM[b_,a_] Conjugate[CKM[c_,a_]]:>IndexDelta[b,c]}];
 
-LHiggs := Block[{ii,mu, feynmangaugerules},
+LHiggs := Module[{ii,mu, feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
  
   ExpandIndices[DC[Phibar[ii],mu] DC[Phi[ii],mu] + muH^2 Phibar[ii] Phi[ii] - lam Phibar[ii] Phi[ii] Phibar[jj] Phi[jj], FlavorExpand->{SU2D,SU2W}]/.feynmangaugerules
  ];
 
-LYukawa := Block[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
+LYukawa := Module[{sp,ii,jj,cc,ff1,ff2,ff3,yuk,feynmangaugerules},
   feynmangaugerules = If[Not[FeynmanGauge], {G0|GP|GPbar ->0}, {}];
  
   yuk = ExpandIndices[
    -yd[ff2, ff3] CKM[ff1, ff2] QLbar[sp, ii, ff1, cc].dR [sp, ff3, cc] Phi[ii] - 
     yl[ff1, ff3] LLbar[sp, ii, ff1].lR [sp, ff3] Phi[ii] - 
     yu[ff1, ff2] QLbar[sp, ii, ff1, cc].uR [sp, ff2, cc] Phibar[jj] Eps[ii, jj], FlavorExpand -> SU2D];
-  yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] -> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] -> IndexDelta[b, c]};
+  yuk = yuk /. { CKM[a_, b_] Conjugate[CKM[a_, c_]] :> IndexDelta[b, c], CKM[b_, a_] Conjugate[CKM[c_, a_]] :> IndexDelta[b, c]};
   yuk+HC[yuk]/.feynmangaugerules
  ];
 
-LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,phi2,togoldstones,doublet,doublet0},
+LGhost := Module[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,phi2,togoldstones,doublet,doublet0},
   (* Pure gauge piece *) 	
   LGh1 = -ghBbar.del[DC[ghB,mu],mu];
   LGhw = -ghWibar.del[DC[ghWi,mu],mu];
@@ -730,7 +730,7 @@ LGhost := Block[{LGh1,LGhw,LGhs,LGhphi,mu, generators,gh,ghbar,Vectorize,phi1,ph
   generators = {-I/2 g1 IdentityMatrix[2], -I/2 gw PauliSigma[1], -I/2 gw PauliSigma[2], -I/2 gw PauliSigma[3]};
   doublet = Expand[{(-I phi1 - phi2)/Sqrt[2], Phi[2]} /. MR$Definitions /. vev -> 0]; 
   doublet0 = {0, vev/Sqrt[2]};
-  Vectorize[{a_, b_}]:= Simplify[{Sqrt[2] Re[Expand[a]], Sqrt[2] Im[Expand[a]], Sqrt[2] Re[Expand[b]], Sqrt[2] Im[Expand[b]]}/.{Im[_]->0, Re[num_]->num}];
+  Vectorize[{a_, b_}]:= Simplify[{Sqrt[2] Re[Expand[a]], Sqrt[2] Im[Expand[a]], Sqrt[2] Re[Expand[b]], Sqrt[2] Im[Expand[b]]}/.{Im[_]->0, Re[num_]:>num}];
   togoldstones := {phi1 -> (GP + GPbar)/Sqrt[2], phi2 -> (-GP + GPbar)/(I Sqrt[2])};
   LGhphi=Plus@@Flatten[Table[-ghbar[[kkk]].gh[[lll]] Vectorize[generators[[kkk]].doublet0].Vectorize[generators[[lll]].(doublet+doublet0)],{kkk,4},{lll,4}]] /.togoldstones;
 
